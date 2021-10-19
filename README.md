@@ -1,13 +1,13 @@
 # Yii2 queue messages
 Queue message component for Yii2
 ##Installation
-```shell
+```
 php composer.phar require --prefer-dist 4erk/yii2-queue-message
 ```
 ##Configurations
 Configuration for `Files` driven:
 `common/config/main.php`
-```php
+```
 'components' => [
     ...
     'messages' => [
@@ -21,7 +21,7 @@ Configuration for `Files` driven:
 ]
 ```
 or `DataBase` driven
-```php
+```
 'components' => [
     ...
     'db' => [
@@ -36,7 +36,7 @@ or `DataBase` driven
 ]
 ```
 and add migrations for `console/config/main.php` 
-```php
+```
 'controllerMap' => [
     'migrate' => [
         'class' => \yii\console\controllers\MigrateController::class
@@ -47,7 +47,7 @@ and add migrations for `console/config/main.php`
 ]
 ```
 ##Usage
-```php
+```
 // Sending message in 'test' queue channel
 Yii::$app->messages->send('test','some message');
 Yii::$app->messages->send('test',['some data index'=>'some data value']);
