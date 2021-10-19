@@ -1,0 +1,36 @@
+{
+    "name":              "4erk/yii2-queue-message",
+    "description":       "Yii2 Queue messages extension which supported DB and Files",
+    "type":              "yii2-extension",
+    "keywords":          [
+        "yii",
+        "queue",
+        "message",
+        "async",
+        "db",
+        "file"
+    ],
+    "license":           "BSD-3-Clause",
+    "authors":           [
+        {
+            "name":  "4erk",
+            "email": "mr4erk@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require":           {
+        "php":          ">=7.0.0",
+        "yiisoft/yii2": "~2.0.14"
+    },
+    "autoload":          {
+        "psr-4": {
+            "yii\\queue_message\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
