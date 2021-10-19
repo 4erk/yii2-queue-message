@@ -7,9 +7,9 @@ php composer.phar require --prefer-dist 4erk/yii2-queue-message
 ##Configurations
 Configuration for `Files` driven:
 `common/config/main.php`
-```
+
+```php
 'components' => [
-    ...
     'messages' => [
         'class' => \yii\queue_message\QueueMessageFile::class
         'mutex' => \yii\mutex\FileMutex::class, // mutex driver
@@ -20,10 +20,11 @@ Configuration for `Files` driven:
     ]   
 ]
 ```
+
 or `DataBase` driven
-```
+
+```php
 'components' => [
-    ...
     'db' => [
         // Database configuration
     ],
@@ -35,8 +36,10 @@ or `DataBase` driven
     ]   
 ]
 ```
+
 and add migrations for `console/config/main.php` 
-```
+
+```php
 'controllerMap' => [
     'migrate' => [
         'class' => \yii\console\controllers\MigrateController::class
@@ -46,8 +49,10 @@ and add migrations for `console/config/main.php`
     ]
 ]
 ```
+
 ##Usage
-```
+
+```php
 // Sending message in 'test' queue channel
 Yii::$app->messages->send('test','some message');
 Yii::$app->messages->send('test',['some data index'=>'some data value']);
