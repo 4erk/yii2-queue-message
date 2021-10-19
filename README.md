@@ -35,6 +35,17 @@ or `DataBase` driven
     ]   
 ]
 ```
+and add migrations for `console/config/main.php` 
+```php
+'controllerMap' => [
+    'migrate' => [
+        'class' => \yii\console\controllers\MigrateController::class
+        'migrationNamespaces' => [
+            'yii\queue_messages\migrations'
+        ]   
+    ]
+]
+```
 ##Usage
 ```php
 // Sending message in 'test' queue channel
