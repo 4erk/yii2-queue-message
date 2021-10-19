@@ -1,10 +1,14 @@
 # Yii2 queue messages
 Queue message component for Yii2
+
 ##Installation
+
 ```
 php composer.phar require --prefer-dist 4erk/yii2-queue-message
 ```
+
 ##Configurations
+
 Configuration for `Files` driven:
 `common/config/main.php`
 
