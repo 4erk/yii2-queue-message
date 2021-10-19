@@ -1,13 +1,17 @@
 # Yii2 queue messages
 Queue message component for Yii2
 
-##Installation
+
+Installation
+------------
+
 
 ```
 php composer.phar require --prefer-dist 4erk/yii2-queue-message
 ```
 
-##Configurations
+Configurations
+------------
 
 Configuration for `Files` driven:
 `common/config/main.php`
@@ -54,7 +58,8 @@ and add migrations for `console/config/main.php`
 ]
 ```
 
-##Usage
+Usage
+------------
 
 ```php
 // Sending message in 'test' queue channel
